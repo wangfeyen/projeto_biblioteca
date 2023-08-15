@@ -1,18 +1,21 @@
 export class Usuario{
     nome: string;
-    ID: string;
-    constructor(nome: string, ID: string){
+    ID: number;
+    constructor(nome: string, ID: number){
         this.nome = nome;
         this.ID = ID;
     }
     setNome(nome:string){
         this.nome = nome;
     }
-    setID(ID:string){
+    setID(ID:number){
         this.ID = ID;
     }
     getNome(){
         return this.nome;
+    }
+    getID(){
+        return this.ID;
     }
 
 }

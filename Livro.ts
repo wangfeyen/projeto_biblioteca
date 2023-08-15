@@ -1,21 +1,21 @@
 export class Livro{
-    Id: string;
+    ID:number;
     Titulo: string;
     Autor: string;
-    Ano_publicacao:number;
+    AnoPublicacao:number;
     Genero:string;
-    Exemplares_disponiveis:number
+    ExemplaresDisponiveis:number
 
-    constructor(ID:string,Título:string,Autor:string,Ano_publicacao:number,Genero:string,Exemplares_disponiveis:number){
-        this.Id = ID;
+    constructor(ID:number,Título:string,Autor:string,AnoPublicacao:number,Genero:string,ExemplaresDisponiveis:number){
+        this.ID = ID;
         this.Titulo = Título;
         this.Autor = Autor;
-        this.Ano_publicacao = Ano_publicacao;
+        this.AnoPublicacao = AnoPublicacao;
         this.Genero = Genero;
-        this.Exemplares_disponiveis = Exemplares_disponiveis;
+        this.ExemplaresDisponiveis = ExemplaresDisponiveis;
     }
-    getId():string{
-        return this.Id;
+    getId():number{
+        return this.ID;
     }
     getTitulo():string{
         return this.Titulo;
@@ -24,16 +24,16 @@ export class Livro{
         return this.Autor;
     }
     getAno_publicacao():number{
-        return this.Ano_publicacao;
+        return this.AnoPublicacao;
     }
     getGenero():string{
         return this.Genero;
     }
     getExemplares_disponiveis():number{
-        return this.Exemplares_disponiveis;
+        return this.ExemplaresDisponiveis;
     }
-    setId(ID:string){
-        this.Id = ID;
+    setId(ID:number){
+        this.ID = ID;
     }
     setTitulo(Título:string){
         this.Titulo = Título;
@@ -41,14 +41,14 @@ export class Livro{
     setAutor(Autor:string){
         this.Autor = Autor;
     }
-    setAno_publicacao(Ano_publicacao:number){
-        this.Ano_publicacao = Ano_publicacao;
+    setAno_publicacao(AnoPublicacao:number){
+        this.AnoPublicacao = AnoPublicacao;
     }
     setGenero(Genero:string){
         this.Genero = Genero;
     }
-    setExemplares_disponiveis(Exemplares_disponiveis:number){
-        this.Exemplares_disponiveis = Exemplares_disponiveis;
+    setExemplares_disponiveis(ExemplaresDisponiveis:number){
+        this.ExemplaresDisponiveis = ExemplaresDisponiveis;
     }
     
 }
